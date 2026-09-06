@@ -2748,7 +2748,8 @@ local Combat = Window:Tab({Name = "Combat", Icon = "rbxassetid://132776928710277
 -- AIMBOT (Left)
 local AimbotSection = Combat:Section({Name = "Aimbot", Side = "Left"})
 
-AimbotSection:Label({Name = "Enable Aimbot Key"}):Keybind({
+AimbotSection:Toggle({Name = "Enable Aimbot", Flag = "AimbotToggle", Default = false})
+AimbotSection:Label({Name = " Aimbot Key"}):Keybind({
     Name = "Aimbot Key",
     Flag = "AimbotEnabled",
     Default = false,
@@ -2778,7 +2779,8 @@ end
 
 -- SILENT AIM (Right)
 local SilentSection = Combat:Section({Name = "Silent Aim", Side = "Right"})
-SilentSection:Label({Name = "Enable Silent Aim Key"}):Keybind({
+SilentSection:Toggle({Name = "Enable Silent Aim", Flag = "SilentAimToggle", Default = false})
+SilentSection:Label({Name = " Silent Aim Key"}):Keybind({
     Name = "Silent Aim Key",
     Flag = "SilentAimEnabled",
     Default = false,
@@ -2795,7 +2797,8 @@ SilentSection:Toggle({Name = "Auto Shoot", Flag = "AutoShoot", Default = false})
 
 -- TRIGGERBOT (Right)
 local TriggerSection = Combat:Section({Name = "Triggerbot", Side = "Right"})
-TriggerSection:Label({Name = "Enable Triggerbot Key"}):Keybind({
+TriggerSection:Toggle({Name = "Enable Triggerbot", Flag = "TriggerbotToggle", Default = false})
+TriggerSection:Label({Name = " Triggerbot Key"}):Keybind({
     Name = "Triggerbot Key",
     Flag = "TriggerbotEnabled",
     Default = false,
@@ -6117,7 +6120,8 @@ local Combat = Window:Tab({Name = "Combat", Icon = "rbxassetid://132776928710277
 -- AIMBOT (Left)
 local AimbotSection = Combat:Section({Name = "Aimbot", Side = "Left"})
 
-AimbotSection:Label({Name = "Enable Aimbot Key"}):Keybind({
+AimbotSection:Toggle({Name = "Enable Aimbot", Flag = "AimbotToggle", Default = false})
+AimbotSection:Label({Name = " Aimbot Key"}):Keybind({
     Name = "Aimbot Key",
     Flag = "AimbotEnabled",
     Default = false,
@@ -6147,7 +6151,8 @@ end
 
 -- SILENT AIM (Right)
 local SilentSection = Combat:Section({Name = "Silent Aim", Side = "Right"})
-SilentSection:Label({Name = "Enable Silent Aim Key"}):Keybind({
+SilentSection:Toggle({Name = "Enable Silent Aim", Flag = "SilentAimToggle", Default = false})
+SilentSection:Label({Name = " Silent Aim Key"}):Keybind({
     Name = "Silent Aim Key",
     Flag = "SilentAimEnabled",
     Default = false,
@@ -6164,7 +6169,8 @@ SilentSection:Toggle({Name = "Auto Shoot", Flag = "AutoShoot", Default = false})
 
 -- TRIGGERBOT (Right)
 local TriggerSection = Combat:Section({Name = "Triggerbot", Side = "Right"})
-TriggerSection:Label({Name = "Enable Triggerbot Key"}):Keybind({
+TriggerSection:Toggle({Name = "Enable Triggerbot", Flag = "TriggerbotToggle", Default = false})
+TriggerSection:Label({Name = " Triggerbot Key"}):Keybind({
     Name = "Triggerbot Key",
     Flag = "TriggerbotEnabled",
     Default = false,
